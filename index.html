@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/code.png" type="image/x-icon">
+    <title>Decodificador de texto</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <img class="logoIcone" src="imagens/code.png" alt="Logo Icone">
+        </div>
+    </header>
+    <main>
+        <section>
+            <label for="input-texto" id="intro-text">Bem-vindo ao Decodificador de Texto! Use esta ferramenta para criptografar e descriptografar mensagens de forma simples e segura.</label>
+            <textarea id="input-texto" class="text-area" cols="40" rows="20" placeholder="Digite seu texto"></textarea>
+            <div class="container-buttons">
+                <div class="instrucao">
+                    <p>CUIDADO: apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="buttons">
+                    <button class="btn-encriptar" onclick="criptografar()">Criptografar</button>
+                    <button class="btn-desencriptar" onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="retangulo background-output">
+            <img src="imagens/boneco.png.png" alt="boneco" width="300px" height="300px">
+            <p>Nenhuma mensagem encontrada</p>
+            <!-- O conteúdo criptografado/descriptografado será exibido aqui -->
+        </div>
+    </main>  
+
+    <h4>Desenvolvido por Tainan Lima</h4>
+    <script src="script.js"></script>  
+</body>
+</html>
